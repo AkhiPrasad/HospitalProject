@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'MainPage.html' %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Dr-WeCare</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+{% block content %}
+
+<div class="row row-cols-1 row-cols-md-4 m-3 p-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'images/brain.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Neurology</h5>
+        <p class="card-text">Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. It has two major divisions: Central nervous system: the brain and spinal cord.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'images/clinic.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Clinicology</h5>
+        <p class="card-text">clinic, an organized medical service offering diagnostic, therapeutic, or preventive outpatient services. Often, the term covers an entire medical teaching.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'images/lung.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pulmonology</h5>
+        <p class="card-text">A branch of medicine that specializes in diagnosing and treating diseases of the lungs and other parts of the respiratory system. These diseases include asthma, emphysema, tuberculosis, and pneumonia.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'images/heart.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cardiology</h5>
+        <p class="card-text">The term cardiology is derived from the Greek words “cardia,” which refers to the heart and “logy” meaning “study of.” Cardiology is a branch of medicine that concerns diseases and disorders of the heart, which may range from congenital defects through to acquired heart diseases such as coronary artery disease</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+</body>
+</html>

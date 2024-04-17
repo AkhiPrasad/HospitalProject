@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'MainPage.html' %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Dr-WeCare</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+{% block content %}
+<div class="container">
+<div class="row mb-4">
+<div class="col d-flex justify-content-center">
+<form method="POST" action="", enctype="multipart/form-data">
+    {% csrf_token %}
+    <label>Name</label><br>
+    <input type="text" name="n1" placeholder="Full Name"><br>
+    <label>Age</label><br>
+    <input type="text" name="a1" placeholder="Enter your Age"><br>
+    <label>Gender</label><br>
+    <input type="radio" name="g1" value="male" checked/> Male <br>
+    <input type="radio" name="g1" value="female"/> Female <br>
+    <input type="radio" name="g1" value="other"/> Other<br>
+    <br>
+    <label>Department</label><br>
+    <select name="d1">
+    <option value="Departments">Departments</option>
+    <option value="Neurology">Neurology</option>
+    <option value="Clinicology">Clinicology</option>
+    <option value="Pulmonology">Pulmonology</option>
+    <option value="Cardiology">Cardiology</option>
+    </select><br>
+    <label>Phone</label><br>
+    <input type="text" name="p1" placeholder="Enter your Mobile No."><br>
+    <label>Email</label><br>
+    <input type="text" name="e1" placeholder="Enter your Mail Id"><br>
+    <br>
+    <input type="submit" value="Submit"><br>
+</form>
+</div>
+</div>
+</div>
+
+{% endblock %}
+
+</body>
+</html>
